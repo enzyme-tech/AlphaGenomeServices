@@ -34,18 +34,20 @@ services/
 ## Status Tracking
 | Service | Description | Status | Next Step |
 |---------|-------------|--------|-----------|
-| core-api | Variant effect API service | not started | scaffold service |
+| VariantEffectService | Variant effect prediction API | scaffolding complete | integrate model with async inference |
 
 ## Progress Log
 - Initial repository scaffolding: README, LICENSE, .gitignore, docs, CI workflow.
+- Added `VariantEffectService` with FastAPI endpoints, tests, docs, and Dockerfile.
+- Refactored `VariantEffectService` endpoints and tests to async/await for concurrency readiness; updated CI dependencies.
 
 ## Suggested Next Step
-- Create `services/core-api` with initial API endpoints and tests.
+- Integrate real variant effect model into `VariantEffectService`.
 
 ## Microservice Status
 | Service | Status |
 |---------|--------|
-| core-api | not started |
+| VariantEffectService | scaffolding complete |
 
 ## Project Tree
 ```
@@ -57,7 +59,20 @@ services/
 ├── AGENTS.md
 ├── LICENSE
 ├── README.md
-└── docs
-    ├── PROJECT_INSTRUCTIONS.md
-    └── STANDARDS_REFERENCES.md
+├── docs
+│   ├── PROJECT_INSTRUCTIONS.md
+│   └── STANDARDS_REFERENCES.md
+└── services
+    ├── __init__.py
+    └── VariantEffectService
+        ├── Dockerfile
+        ├── __init__.py
+        ├── docs
+        │   └── README.md
+        ├── src
+        │   ├── __init__.py
+        │   └── main.py
+        └── tests
+            ├── __init__.py
+            └── test_main.py
 ```

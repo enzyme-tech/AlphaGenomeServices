@@ -16,6 +16,6 @@ jobs:
           python-version: '3.x'
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt || true
+          pip install fastapi requests httpx pytest pytest-asyncio
       - name: Run tests
-        run: pytest
+        run: pytest -q
