@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+*.egg
+*.log
+.venv/
+venv/
+.env
+
+# VSCode
+.vscode/
+
+# Docker
+*.tar
+*.tmp
+docker-compose.override.yml
+.env.docker
+
+# Mac
+.DS_Store
