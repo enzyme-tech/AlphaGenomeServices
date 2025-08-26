@@ -13,7 +13,7 @@ This document defines conventions for AI agents collaborating on this repository
 ## Folder Structure Template
 ```
 services/
-└── <service-name>/
+└── <ServiceName>/
     ├── src/
     ├── tests/
     ├── docs/
