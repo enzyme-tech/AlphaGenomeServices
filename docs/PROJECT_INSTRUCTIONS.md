@@ -14,5 +14,14 @@ All development must align with:
 - Usability notes (IEC 62366-1).
 - Deploy via Cloud Run + Batch, with logging/monitoring.
 
+## Naming Conventions
+
+- **Inside the repo (folders, docs):** use **PascalCase** (e.g., `VariantEffectService`).
+- **For infrastructure (Docker images, Cloud Run, URLs):** use **kebab-case** (e.g., `variant-effect-service`).
+
+This separation avoids conflicts:
+- PascalCase improves readability in code and matches class/module conventions.
+- kebab-case ensures compatibility with Docker, Kubernetes, and DNS constraints.
+
 ## Note
 All outputs marked **research-only** unless validated.
