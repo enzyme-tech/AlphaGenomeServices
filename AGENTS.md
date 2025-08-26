@@ -34,12 +34,13 @@ services/
 ## Status Tracking
 | Service | Description | Status | Next Step |
 |---------|-------------|--------|-----------|
-| VariantEffectService | Variant effect prediction API | scaffolding complete | integrate model with async inference |
+| VariantEffectService | Variant effect prediction API | scaffolding complete | integrate real model |
 
 ## Progress Log
 - Initial repository scaffolding: README, LICENSE, .gitignore, docs, CI workflow.
 - Added `VariantEffectService` with FastAPI endpoints, tests, docs, and Dockerfile.
 - Refactored `VariantEffectService` endpoints and tests to async/await for concurrency readiness; updated CI dependencies.
+- Updated repository metadata and CI workflow.
 
 ## Suggested Next Step
 - Integrate real variant effect model into `VariantEffectService`.

@@ -1,22 +1,11 @@
-# Python
 __pycache__/
-*.py[cod]
-*.so
-*.egg-info/
-*.egg
-*.log
+*.pyc
 .venv/
-venv/
 .env
-
-# VSCode
 .vscode/
-
-# Docker
-*.tar
-*.tmp
-docker-compose.override.yml
-.env.docker
-
-# Mac
+*.log
+*.pid
+.coverage
+pytest_cache/
 .DS_Store
+Thumbs.db
